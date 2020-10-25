@@ -92,51 +92,6 @@ By default the training goes over 30 epochs but the loop is broken as soon as th
 
 <!-- ############################################################################################ -->
 
-# Pipeline
-
-## Generating data
-
-```bash
-g++ -o data_gen data_gen_XOR.cpp
-./data_gen
-```
-or
-```bash
-g++ -o data_gen data_gen_CSWAP.cpp
-./data_gen
-```
-by default this creates 250 training samples and 100 test samples.
-
-
-## Training
-```bash
-g++ -o training training.cpp
-./training
-```
-The default settings are
- - learning rate (eta) = 0.08
- - momentum (alpha) = 0.1
-
-**Note:** When training on the CSWAP data, the Neural Network will automatically initialized with 3 Input and 3 Output neurons, however 2 hidden neurons appear to be insufficient to train the network!
-
-## Plotting the error curve
-The plotting script utilizes **numpy** and **matplotlib**:
-
-```bash
-pip install numpy
-pip install matplotlib
-```
-then run
-```bash
-python plot.py 
-```
-to obtain a plot like this:
-
-![Image of RAE plot](https://raw.githubusercontent.com/leoth-91/multilayerXOR/master/error.png)
-
-
- -->
-
 
 
 
