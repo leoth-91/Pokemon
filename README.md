@@ -11,6 +11,8 @@ This notebook uses the two datasets to predict a Pokémon battle based on the st
 
 A random forest model is trained on the combat dataset and fed with the features of the paired Pokémon.
 
+Using the trained model it is possible to show which of a Pokémons stats are most important in combat.
+
 ## Ranking Pokémon
 
 Pokémon are ranked by their performance in the battle outcomes available. Two methods are explored and compared.
